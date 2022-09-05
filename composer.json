@@ -1,0 +1,22 @@
+{
+    "name": "granam/mautic-composer-v2-plugin",
+    "type": "composer-plugin",
+    "description": "Allows Composer v2 for Mautic",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {"Mautic\\Composer\\": "src/"}
+    },
+    "extra": {
+        "class": "Mautic\\Composer\\InstallerPlugin"
+    },
+    "require": {
+        "ext-json": "*",
+        "composer-plugin-api": "^1.0|^2.0"
+    },
+    "replace": {
+        "mautic/composer-plugin": "self.version"
+    },
+    "require-dev": {
+        "composer/composer": "^1.5|^2.0"
+    }
+}
